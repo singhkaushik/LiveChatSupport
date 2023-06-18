@@ -42,11 +42,7 @@ CREATE TABLE `accounts` (
 -- Dumping data for table `accounts`
 --
 
-INSERT INTO `accounts` (`id`, `email`, `password`, `full_name`, `role`, `secret`, `last_seen`, `status`) VALUES
-(1, 'operator@example.com', 'Livechat@123', 'Operator', 'Operator', '$2y$10$FynMD5G3iN1PQ2iCL5fc1u8WQf/YE6svhX6EeA0JAYIFtPTRB6CM6', '2023-06-18 07:53:24', 'Occupied'),
-(2, 'test@gmail.com', '123456', 'test', 'Operator', '$2y$10$OMZxYrrsyl3Jy2ffYsT.iepNV76OsDSf9MTZbgtGtAn9jd4rXaMQK', '2023-06-18 07:07:15', 'Occupied'),
-(3, 'test387927@gmail.com', '', 'Gaurav', 'Guest', '$2y$10$gRvryoQvl1c8ihBoJb/DF.J.m2SJk.ukpiJhg2WVO89vKniy2JaHW', '2023-06-18 07:05:21', 'Occupied'),
-(4, 'ghapinku@gmail.com', '', 'kaushik', 'Guest', '$2y$10$qpHsTitCgaW05S1ULeU0jeNeV5FfbYu8gbv3Zw.GoLTNZqlyZkPpy', '2023-06-18 07:53:20', 'Occupied');
+
 
 -- --------------------------------------------------------
 
@@ -65,9 +61,6 @@ CREATE TABLE `conversations` (
 -- Dumping data for table `conversations`
 --
 
-INSERT INTO `conversations` (`id`, `account_sender_id`, `account_receiver_id`, `submit_date`) VALUES
-(1, 3, 2, '2023-06-18 07:02:26'),
-(2, 4, 1, '2023-06-18 07:07:32');
 
 -- --------------------------------------------------------
 
@@ -87,17 +80,7 @@ CREATE TABLE `messages` (
 -- Dumping data for table `messages`
 --
 
-INSERT INTO `messages` (`id`, `conversation_id`, `account_id`, `msg`, `submit_date`) VALUES
-(1, 1, 3, 'hi ', '2023-06-18 07:02:33'),
-(2, 1, 2, 'hi gaurav', '2023-06-18 07:04:13'),
-(3, 1, 2, 'how are you', '2023-06-18 07:04:23'),
-(4, 1, 3, 'i\'m fine and you', '2023-06-18 07:04:37'),
-(5, 1, 2, 'hi', '2023-06-18 07:06:20'),
-(6, 2, 4, 'hi', '2023-06-18 07:07:44'),
-(7, 2, 1, 'hlo', '2023-06-18 07:07:53'),
-(8, 2, 1, 'how can i help you', '2023-06-18 07:08:02'),
-(9, 2, 4, 'when can i get my order delivered', '2023-06-18 07:08:22'),
-(10, 2, 1, 'within 10 hours', '2023-06-18 07:08:36');
+
 
 --
 -- Indexes for dumped tables
